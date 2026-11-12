@@ -11,9 +11,9 @@
         "id": "nota_flujo",
         "type": "comment",
         "z": "tab_temperatura_git",
-        "name": "Temperatura simulada - proyecto listo para GitHub",
+        "name": "Demostracion en video - 2026-11-12T05-17-00",
         "info": "Los botones azules permiten probar tres entradas. Deploy guarda y ejecuta el flujo; commit registra una version; push la envia a GitHub; pull incorpora cambios remotos.",
-        "x": 380,
+        "x": 370,
         "y": 60,
         "wires": []
     },
