@@ -11,9 +11,9 @@
         "id": "nota_flujo",
         "type": "comment",
         "z": "tab_temperatura_git",
-        "name": "1. Inyectar -> 2. Validar y evaluar -> 3. Ver resultado en Debug",
+        "name": "Temperatura simulada - proyecto listo para GitHub",
         "info": "Los botones azules permiten probar tres entradas. Deploy guarda y ejecuta el flujo; commit registra una version; push la envia a GitHub; pull incorpora cambios remotos.",
-        "x": 410,
+        "x": 380,
         "y": 60,
         "wires": []
     },
@@ -22,7 +22,15 @@
         "type": "inject",
         "z": "tab_temperatura_git",
         "name": "Probar normal: 25 C",
-        "props": [{"p": "payload"}, {"p": "topic", "vt": "str"}],
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -32,14 +40,26 @@
         "payloadType": "num",
         "x": 180,
         "y": 160,
-        "wires": [["evaluar_temperatura"]]
+        "wires": [
+            [
+                "evaluar_temperatura"
+            ]
+        ]
     },
     {
         "id": "inject_alarma",
         "type": "inject",
         "z": "tab_temperatura_git",
         "name": "Probar alarma: 35 C",
-        "props": [{"p": "payload"}, {"p": "topic", "vt": "str"}],
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -49,14 +69,26 @@
         "payloadType": "num",
         "x": 180,
         "y": 240,
-        "wires": [["evaluar_temperatura"]]
+        "wires": [
+            [
+                "evaluar_temperatura"
+            ]
+        ]
     },
     {
         "id": "inject_invalido",
         "type": "inject",
         "z": "tab_temperatura_git",
         "name": "Probar entrada invalida",
-        "props": [{"p": "payload"}, {"p": "topic", "vt": "str"}],
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -66,7 +98,11 @@
         "payloadType": "str",
         "x": 190,
         "y": 320,
-        "wires": [["evaluar_temperatura"]]
+        "wires": [
+            [
+                "evaluar_temperatura"
+            ]
+        ]
     },
     {
         "id": "evaluar_temperatura",
@@ -80,10 +116,24 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "outputLabels": ["Normal", "Alarma", "Entrada invalida"],
         "x": 510,
         "y": 240,
-        "wires": [["debug_normal"], ["debug_alarma"], ["debug_error"]]
+        "wires": [
+            [
+                "debug_normal"
+            ],
+            [
+                "debug_alarma"
+            ],
+            [
+                "debug_error"
+            ]
+        ],
+        "outputLabels": [
+            "Normal",
+            "Alarma",
+            "Entrada invalida"
+        ]
     },
     {
         "id": "debug_normal",
