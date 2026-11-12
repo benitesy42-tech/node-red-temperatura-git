@@ -50,4 +50,4 @@ El flujo usa solamente nodos incluidos en Node-RED:
 
 ## Nota para demostrar pull
 
-Estado de sincronizacion: version inicial del proyecto.
+Estado de sincronizacion: Comprobar pull desde GitHub hacia Node-RED.
