@@ -50,4 +50,4 @@ El flujo usa solamente nodos incluidos en Node-RED:
 
 ## Nota para demostrar pull
 
-Estado de sincronizacion: Cambio remoto para demostrar pull 2026-11-12T16-35-14.
+Estado de sincronizacion: Cambio remoto para demostrar pull 2026-11-12T16-57-23.
