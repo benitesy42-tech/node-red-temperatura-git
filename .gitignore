@@ -1,0 +1,8 @@
+node_modules/
+*.backup
+*_cred.json
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db

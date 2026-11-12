@@ -1,0 +1,13 @@
+{
+    "name": "node-red-temperatura-git",
+    "description": "Demostracion de Projects, control de temperatura simulada y sincronizacion con GitHub",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}
