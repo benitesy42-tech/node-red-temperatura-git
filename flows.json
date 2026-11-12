@@ -11,7 +11,7 @@
         "id": "nota_flujo",
         "type": "comment",
         "z": "tab_temperatura_git",
-        "name": "Demostracion en video - 2026-11-12T16-35-14",
+        "name": "Demostracion en video - 2026-11-12T16-57-23",
         "info": "Los botones azules permiten probar tres entradas. Deploy guarda y ejecuta el flujo; commit registra una version; push la envia a GitHub; pull incorpora cambios remotos.",
         "x": 370,
         "y": 60,
